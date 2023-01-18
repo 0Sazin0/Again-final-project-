@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog list view</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="scss/responsive.css">
+</head>
+<body>
+  <div class="preloader">
+    <img src="image/loadinganimation.gif" alt="">
+  </div>
+  <!--header starts here-->
+  <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 location">
+                    <p >
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        1234, Park Street, New York, America
+                    </p>
+                </div>
+                <div class="col-lg-6 welcome ">
+                    <p>Welcome to PRODUSTRY</p>
+                </div>
+                <div class="col-lg-3 header-icon">
+                    <ul>
+                        <li>
+                            <a href="bloglist.html#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="bloglist.html#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="bloglist.html#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="bloglist.html#"><i class="fa-brands fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="bloglist.html#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </header>
+  <!--header ends here-->
+    
+    <!--NAV starts here-->
+  <nav class="navbar navbar-expand-lg nav" id="navbar">
+    <div class="container">
+      <a class="navbar-brand navlogo" href="index.html"><img src="image/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mycusnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-align-right"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mycusnav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="bloglist.html#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="bloglist.html">Our Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+            <span class="btn-toggler d-lg-block d-none"><i class="fa-solid fa-align-right"></i></span>
+      </div>
+    </div>
+  </nav>        
+  <!--NAV ends here-->
+    
+  <!--BANNAR starts here-->
+  <section id="about-us-banner">
+      <div class="about-us-banner">
+        <div class="about-bnr-img d-sm-block" style="background-image: url(image/About_Us.jpg);">
+          <div class="container">
+            <div class="about-us-bnr-item mx-auto">
+                <h2>BLOG LIST VIEW</h2>
+                <p>Home <i class="fa-solid fa-angles-right"></i> <a href="bloglist.html#">Blog List View</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--BANNAR ends here-->
+
+  <!--blog list view starts here-->
+  
+  <!--blog list grid-->
+  <section id="blog-view">
+    <div class="container">
+      <div class="row blog-grid align-content-between">
+        <div class="col-md-3 col-sm-3 sort-icon col-12">
+          <a href="bloggrid.html"><span><i class="fa-solid fa-grip"></i></span></a>
+          <a href="bloglist.html"><span><i class="fa-solid fa-list"></i></span></a>
+        </div>
+          <div class=" col-md-4 col-sm-9 sort-select col-12"> 
+            <span>Sort by :</span>
+              <select name="" id="">
+                <option value="">Name</option>
+                <option value="">Name</option>
+                <option value="">Name</option>
+              </select>
+            <span>Showing :</span>
+              <select name="" id="">
+                <option value="">12</option>
+                <option value="">12</option>
+                <option value="">12</option>
+              </select> 
+          </div>
+          <div class="pages col-md-5 d-flex align-items-center justify-content-end">
+            <p>Pages :</p>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="bloglist.html#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">1</a></li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">2</a></li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">3</a></li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">4</a></li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">5</a></li>
+                <li class="page-item"><a class="page-link" href="bloglist.html#">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="bloglist.html#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>  
+      </div>
+  </section>
+
+  
+  <!--blog list-->
+  <section id="bloglist">
+    <div class="container">
+      <div class="row align-content-between">
+        <!--blog posts starts here-->
+        <div class="blogpost col-sm-8">
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(image/bloglist1.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="bloglist.html#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+                </p>
+                <a href="bloglist.html#" class="read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(image/bloglist2.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="bloglist.html#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+                </p>
+                <a href="bloglist.html#" class="read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-single-post">
+            <div class="blogpost-img"  style="background-image: url(image/bloglist3.jpg);">
+              <div class="bloglist-contant mx-0 ">
+                <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+                <div class="blogpost-social-icon">
+                  <a href="bloglist.html#"><i class="fa-solid fa-user"></i>By: Admin</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-thumbs-up"></i>2.5k Likes</a>
+                  <a href="bloglist.html#"><i class="fa-solid fa-comments"></i>1.5k Comments</a>
+                </div>
+                <p class="blogpost-details mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsumas been the duy's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronicting. 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry<BR>
+                </p>
+                <a href="bloglist.html#" class="read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--blog posts ends here-->
+        <!--blog list mix it up starts here -->
+         <div class="postfilter col-sm-4">
+          <!--mix it upbutton starts here-->
+           <div class="filter-btn">
+              <ul>
+                <li><button type="button" data-filter="all" class="mixitup-control-active">Popular</button></li>
+                <li><button type="button" data-filter=".Recent">Recent</button></li>
+                <li><button type="button" data-filter=".Latest">Latest</button></li>
+              </ul>
+           </div>
+           <!--mix it up button ends here-->
+           <!--filtered post starts here-->
+           <div class=" filtered-post ">
+              <div class="mix Latest fltr-post-contant row align-content-between">
+                <div class="fltr-post-img col-3">
+                   <a href="bloglist.html#">
+                     <img src="image/postfilter1.jpg" alt="">
+                     <span><i class="fa-solid fa-link"></i></span>
+                   </a>
+                </div>
+                <div class="fltr-post-info col-8 ">
+                  <a href="bloglist.html#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
+                  <div class="fltr-post-icon">
+                    <span><a href="bloglist.html#"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                    <span class="d-inline-block"> <a href="bloglist.html#"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="mix Recent fltr-post-contant row align-content-between">
+                <div class="fltr-post-img col-3">
+                   <a href="bloglist.html#">
+                     <img src="image/postfilter1.jpg" alt="">
+                     <span><i class="fa-solid fa-link"></i></span>
+                   </a>
+                </div>
+                <div class="fltr-post-info col-8">
+                  <a href="bloglist.html#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
+                  <div class="fltr-post-icon">
+                    <span><a href="bloglist.html#"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                    <span class="d-inline-block"> <a href="bloglist.html"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="mix Latest Recent fltr-post-contant row align-content-between">
+                <div class="fltr-post-img col-3">
+                   <a href="bloglist.html#">
+                     <img src="image/postfilter1.jpg" alt="">
+                     <span><i class="fa-solid fa-link"></i></span>
+                   </a>
+                </div>
+                <div class="fltr-post-info col-8">
+                  <a href="bloglist.html#"><h6>Best Contructory Ever, you will be Apriciate</h6></a>
+                  <div class="fltr-post-icon">
+                    <span ><a href="bloglist.html#"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                    <span class="d-inline-block"> <a href="bloglist.html"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <!--filteredpost ends here-->
+           <!--blog filter catagories starts here-->
+           <div class="mix fltr-catagories">
+              <h5>CATAGORIES</h5>
+              <ul>
+                <li>
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Construction</a>
+                    <a href="bloglist.html#"  class="col-1">13</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Industry</a>
+                    <a href="bloglist.html#"  class="col-1">23</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Contructor</a>
+                    <a href="bloglist.html#"  class="col-1">33</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Production</a>
+                    <a href="bloglist.html#"  class="col-1">43</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Company</a>
+                    <a href="bloglist.html#"  class="col-1">53</a>
+                  </div>
+                </li>
+                <li class="d-none d-md-block">
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Builders</a>
+                    <a href="bloglist.html#"  class="col-1">63</a>
+                  </div>
+                </li>
+                <li class="d-none d-md-block">
+                  <div class="ctagories row">
+                    <a href="bloglist.html#" class="col-11">Building</a>
+                    <a href="bloglist.html#"  class="col-1">73</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--blog filter catagories ends here-->
+            <!--tag list starts here-->
+            <div class="mix tag-list">
+              <div class="widget-title text-uppercase ">
+                <h5>tags</h5>
+                <div class="tag-btn">
+                  <a href="bloglist.html#">Industry</a>
+                  <a href="bloglist.html#">Construction</a>
+                  <a href="bloglist.html#">Building</a>
+                  <a href="bloglist.html#">Company</a>
+                  <a href="bloglist.html#">Architect</a>
+                  <a href="bloglist.html#" class="d-inline-block">Architecture</a>
+                  <a href="bloglist.html#" class="d-inline-block">Builders</a>
+                  <a href="bloglist.html#" class="d-inline-block">Contruct</a>
+                </div>
+              </div>
+            </div>
+            <!--tag list ends here-->
+            <!--video starts here-->
+            <div class="video-part d-none d-md-block">
+              <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Video title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body video-play">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/H0ElOyZjeQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--video ends here-->
+         </div>
+        <!--blog list mix it up ends here -->
+      </div>
+    </div>
+    <!--blog button starts here-->
+    <div class="blog-button container">
+      <a href="bloglist.html#"> NEXT PAGE</a>
+    </div>
+  </section>
+  <!--blog list view ends here-->
+
+
+
+     <!--footer starts here-->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <!--footer icon-->
+        <div class="footer-icon col-lg-3 col-md-6 col-sm-12">
+          <a href="index.html"><img src="image/footer-logo.png" alt=""></a>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's.
+            unknown printer took a galley of type and scrambled it to make a type.
+          </p>
+          <div class="footer-icon-img">
+            <a href="bloglist.html#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="bloglist.html#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="bloglist.html#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="bloglist.html#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="bloglist.html#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <!--footer contact us-->
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="contact-us">
+            <h5>Contact Us</h5>
+            <ul>
+              <li>
+                
+                <i class="fa-solid fa-location-dot col-2"></i>
+                <span class="col-10">1234, Park Street Avenue, NewYork City North America.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                  <a href="bloglist.html#">(+880) 123 4567 890</a><br>
+                  <a href="bloglist.html#">(+880) 098 7654 321</a>
+                </span>
+                  
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <a href="bloglist.html#">produstry.industry@gmail.com</a><br>
+                  <a href="bloglist.html#">industry.produstry@gmail.com</a>
+                </span>
+                  
+              </li>
+            </ul> 
+          </div>
+        </div>
+        <!--footer links-->
+        <div class="col-lg-2 col-sm-6 col-md-6 col-sm-12">
+          <div class="footer-links ">
+            <h5>Important Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html"> About US</a></li>
+              <li><a href="bloglist.html#">Our Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li> <a href="bloglist.html">Our Blogs</a></li>
+              <li> <a href="bloglist.html#">Partners</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+           </div>
+        </div>
+        <!--footer latest news-->
+        <div class="col-lg-4 col-sm-6 col-md-6 col-sm-12">
+          <div class="latest-news">
+              <h5>Latest News</h5>
+              <div class="latest-news-content row">
+                  <div class="latest-news-img col-3">
+                      <a href="bloglist.html#"><img src="image/latest-news1.png" class="img-responsive" alt="blog_single_img"></a>
+                  </div>
+                  <div class="latest-news-details col-9">
+                      <h6>Nice Newest Construction Factory Work</h6>
+                      <p>26 October 2017</p>
+                      <span class="col-4"><a href="bloglist.html"><i class="fa fa-user"></i><span> By : Admin</span></a></span>
+                      <span class="col-4"><a href="bloglist.html"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                      <span class="col-4"> <a href="bloglist.html"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                  </div>
+              </div>
+              <div class="latest-news-content row">
+                <div class="latest-news-img col-3">
+                    <a href="bloglist.html"><img src="image/latest-news2.png" class="img-responsive" alt="blog_single_img"></a>
+                </div>
+                <div class="latest-news-details col-9">
+                    <h6>Nice Newest Construction Factory Work</h6>
+                    <p>26 October 2017</p>
+                    <span class="col-4"><a href="bloglist.html"><i class="fa fa-user"></i><span> By : Admin</span></a></span>
+                    <span class="col-4"><a href="bloglist.html"><i class="fa fa-thumbs-up"></i><span> 2.5k likes</span></a></span>
+                    <span class="col-4"><a href="bloglist.html"><i class="fa fa-comments"></i><span> 1.5k Comments</span></a></span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="foot">
+    <div>
+      <p>Copyright &copy; 2017. All right reserved by <a href="bloglist.html#">PRODUSTRY</a></p>
+    </div>
+  </section>
+  <!--footer ends here-->
+
+  <section>
+    <button id="backToTop">
+       <i class="fa-solid fa-angles-up"></i>
+    </button>
+  </section>
+
+
+  <!--js files are attached here-->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/countMe.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

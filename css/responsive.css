@@ -1,0 +1,301 @@
+/*common part css*/
+@media (min-width:320px) and (max-width:767px){
+    p{
+        font-size: 14px;
+    }
+    #backToTop {
+        bottom: 10px;
+        right: 10px;
+        padding: 7px;
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .location p {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .welcome p{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        padding: 10px ;
+        font-size: 12px;
+    }
+    .header-icon{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+@media(min-width:992px){
+    #mycusnav ul li{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    #mycusnav .activenavmenu{
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+    }
+    #navbar {
+        min-height: 100px;
+        padding: 0!important;
+    }
+    nav .container{
+        position: relative;
+    }
+    nav .navlogo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-52%);
+        transition: 0.3s ease-in-out;
+    }
+    nav .activenavlogo{
+        left: 0%;
+        transform: translateX(0%);
+        transition: 0.3s ease-in-out;
+    }
+}
+/*banner starts here*/
+@media (min-width:320px) and (max-width:575){
+    .slide-banner{
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slider-icon{
+        display: none;
+    }
+}
+/*banner ends here*/
+/*ABOUT US starts here*/
+
+@media (min-width:320px) and (max-width:767px){
+    .about-us-img {
+        display: none;
+    }
+    .about-us-content{
+        width: 100%;
+    }
+    .about-us-content h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .Our-Services {
+        padding: 0;
+        
+    }
+    #About-Us {
+        padding: 0;
+    }
+    .about-us-content h2 {
+        margin-bottom: 0;
+    }
+    .about-us-content .nav-tabs .nav-item {
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .about-us-content {
+        padding: 20px;
+    }
+    .about-us-content .nav-tabs .nav-item .nav-link {
+        padding-left: 0!important;
+        font-size: 12px;
+    }
+    .about-us-content .tab-content {
+        line-height: 150%;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    .tab-content p {
+        font-size: 14px!important;
+        
+    }
+    .tab-pane a {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 7px;    
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .about-us-img img {
+        display: none;
+    }
+    .about-us-content {
+        padding-left: 0px;
+        margin-left: 20px;
+    }
+    .about-us-content p{
+        font-size: 14px;
+    }
+    .about-us-content .nav.nav-tabs .nav-link.active,
+    .about-us-content .nav.nav-tabs ul li{
+        display: inline-block;
+    }
+    .about-us-content .nav.nav-tabs .nav-item {
+
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    .about-us-content .nav-tabs .nav-item .nav-link {
+        padding-left: 2px!important;
+        font-size: 16px;
+    }
+    .tab-content p {
+        font-size: 14px!important;
+        
+    }
+    .about-us-content .tab-content {
+        padding-top: 10px;
+        line-height: 150%;
+        padding-left: 0px;
+    }
+    
+}
+@media (min-width:992px) and (max-width:1199px){
+    .about-us-content .nav-tabs .nav-item {
+        padding-right: 10px;
+        padding-bottom: 0px;
+    }
+    .about-us-content .tab-content {
+        padding-left: 5px;
+        padding-top: 20px;
+    }
+    #About-Us h2 {
+        padding-left: 10px;
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+    .about-us-img img{
+       display: none;
+    }
+    .about-us-content {
+         padding-left: 0px; 
+    }
+    .tab-content p {
+        line-height: 180%;
+    }
+    .about-us-content .nav-tabs .nav-item {
+        padding:  10px 7px;
+    }
+}
+@media (min-width:1450px){
+    .about-us-img img {
+        right: -20%;
+    }
+}
+/*ABOUT US ends here*/
+
+/*nav bar starts here*/
+@media (min-width:332px) and (max-width:991px){
+    #mycusnav ul{
+        text-align: center;
+    }
+    #mycusnav ul li{
+        display: inline-block;
+    }
+    #mycusnav ul li a{
+        display: inline-block;
+      }
+    #mycusnav ul li a::after {
+        width: 20%;
+        left: 40%;
+    }
+    #mycusnav ul li a::before {
+        width: 20%;
+        left: 40%;
+    }
+    #mycusnav ul li::after {
+        top: 0;
+        left: 40%;
+      }
+      #mycusnav ul li::before {
+          top: 0;
+          right: 40%;
+      }
+}
+/*nav bar starts here*/
+/*OUR PORTFOLIO starts here*/
+@media (min-width:992px) and (max-width:1200px){
+    .img-item img{
+        width: 215px;
+      }
+    .img-item{
+        width: 215px;
+      }
+}
+@media (min-width:768px) and (max-width:991px){
+    .portfolio-img{
+        justify-content: space-evenly;
+    }
+    .img-item{
+        margin-bottom: 50px;
+        width: 270px;
+    }
+    .img-item img{
+        width: 270px;
+      }
+    
+}
+@media (min-width:320px) and (max-width:767px){
+    .portfolio-img{
+        justify-content: space-evenly;
+    }
+    .img-item{
+        margin-bottom: 20px;
+        width: 290px;
+    }
+    .img-item img{
+        width: 290px;
+      }
+}
+/*OUR PORTFOLIO ends here*/
+
+/*counter up starts here*/
+@media (min-width:320px) and (max-width:767px){
+    #counter-up .container .row {
+        height: 150px;
+    }
+    #counter-up .count h1 {
+        font-size: 20px;
+    }
+    #counter-up .count h3 {
+        font-size: 13px;
+    }
+}
+/*counter up ends here*/
+
+
+/*blogs starts here*/
+@media (min-width:768px) and (max-width:991px){
+    #blog .blog-content{
+        padding: 60px 10px 10px 10px;
+        
+      }
+      #blog .blog-Slider-Content.slick-center .blog-content {
+        transform: translateY(-75px);
+    }
+}
+/*blogs ends here*/
+
+/*footer starts here*/
+@media (min-width:320px) and (max-width:767px){
+    .latest-news-details h6 {
+        font-size: 12px!important;
+    }
+    .latest-news-details p {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+    .latest-news-details a {
+        font-size: 10px;
+        padding-right: 0px; 
+    }
+}
+/*footer ends here*/
